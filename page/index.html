@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mochicahui, El Fuerte, Sinaloa</title>
+  <style>
+    /* ======== ESTILOS GENERALES ======== */
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    /* BANNER MÁS COMPACTO */
+    .banner {
+      height: 50vh;
+      padding: 10px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      background-image: url('https://www.meganoticias.mx/uploads/noticias/cuerpo/mochicahui-y-la-evangelizacion-del-pueblo-zuaque-en-1605-16585269333.jpg');
+      background-size: cover;
+      background-position: center;
+      box-shadow: inset 0 0 0 1000px rgba(45, 106, 79, 0.6);
+    }
+
+    .banner h1 {
+      font-size: 3em;
+      margin: 0;
+      font-weight: 900;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    .banner p {
+      font-size: 1.2em;
+      margin-top: 8px;
+      font-weight: 600;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    .banner .poblacion {
+      font-size: 1.1em;
+      margin-top: 10px;
+      font-weight: 700;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+    }
+
+    header {
+      display: none;
+    }
+
+    nav {
+      background-color: #40916c;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 18px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd166;
+    }
+
+    main {
+      padding: 40px 25px;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+
+    section {
+      margin-bottom: 55px;
+    }
+
+    section h2 {
+      color: #2d6a4f;
+      border-bottom: 3px solid #95d5b2;
+      padding-bottom: 10px;
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .image-wrapper {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .image-wrapper img {
+      max-width: 60%;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .image-wrapper img:hover {
+      transform: scale(1.05);
+    }
+
+    .bibliografia {
+      font-size: 1em;
+      color: #555;
+      margin-top: 12px;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #2d6a4f;
+      color: #fff;
+      padding: 18px;
+      font-size: 1em;
+      font-weight: 600;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+      main {
+        margin: 20px 10px 40px;
+        padding: 25px 15px;
+      }
+      section h2 {
+        font-size: 1.6em;
+      }
+      .banner h1 {
+        font-size: 2.6em;
+      }
+      .banner p, .banner .poblacion {
+        font-size: 1.1em;
+      }
+      .image-wrapper img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <div>
+      <h1>Mochicahui, El Fuerte, Sinaloa</h1>
+      <p>Una mirada a la historia, cultura y vida de esta comunidad sinaloense</p>
+      <p class="poblacion">Población: 6,055 habitantes (INEGI 2020)</p>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#economia">Economía</a></li>
+      <li><a href="#sociales">Sociales</a></li>
+      <li><a href="#culturales">Culturales</a></li>
+      <li><a href="#como-llegar">Cómo llegar</a></li>
+      <li><a href="#problemas-sociales">Problemas sociales</a></li>
+      <li><a href="#problemas-ecologicos">Problemas ecológicos</a></li>
+      <li><a href="#personajes">Personajes relevantes</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="historia">
+      <h2>Historia de la comunidad</h2>
+      <div class="image-wrapper">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Templo_Antiguo_de_San_Jer%C3%B3nimo_%28_Mochicahui%2C_El_Fuerte%3B_Sinaloa%29.JPG/960px-Templo_Antiguo_de_San_Jer%C3%B3nimo_%28_Mochicahui%2C_El_Fuerte%3B_Sinaloa%29.JPG" alt="Templo de San Jerónimo, Mochicahui" />
+      </div>
+      <p>
+        Mochicahui, una de las comunidades más antiguas del municipio de El Fuerte, tiene raíces indígenas yoreme-zuaque. 
+        En el año 1605, el padre jesuita Andrés Pérez de Ribas fundó la misión de San Jerónimo de Mochicahui, iniciando un proceso de evangelización 
+        que dejó una huella profunda en la cultura local. Hoy, el pueblo conserva restos coloniales, tradiciones y la memoria viva de su pasado.
+      </p>
+      <p class="bibliografia">
+        Fuente: Luz Noticias (2023). <a href="https://www.luznoticias.mx/2023-02-27/sinaloa/convertiran-a-mochicahui-en-pueblo-senorial/157588" target="_blank" rel="noopener noreferrer">“Convertirán a Mochicahui en Pueblo Señorial”</a>
+      </p>
+    </section>
+
+    <section id="economia">
+      <h2>Actividades económicas</h2>
+      <div class="image-wrapper">
+        <img src="https://www.debate.com.mx/img/2019/07/08/ganaderos_de_el_fuerte_enfrentan_problemas_de_sequia.jpg?__scale=w%3A1200%2Ch%3A600%2Ct%3A2" alt="Ganadería en El Fuerte" />
+      </div>
+      <p>
+        La economía de Mochicahui se basa principalmente en la agricultura y la ganadería. 
+        Los cultivos más comunes incluyen maíz, frijol y hortalizas, mientras que la cría de ganado bovino 
+        y porcino complementa la actividad económica. En los últimos años, el comercio y los servicios educativos 
+        han cobrado relevancia gracias a la presencia de la Universidad Autónoma Indígena de México.
+      </p>
+      <p class="bibliografia">Fuente: Testimonios locales y gobierno municipal de El Fuerte.</p>
+    </section>
+
+    <section id="sociales">
+      <h2>Actividades sociales</h2>
+      <div class="image-wrapper">
+        <img src="https://revistaedurama.com/wp-content/uploads/2019/12/universidad_indxgena_recupera_su_nombre_original_a_uaim_1_crop1574908566031.jpeg_219914347-678x381.jpeg" alt="UAIM Mochicahui" />
+      </div>
+      <p>
+        Mochicahui cuenta con una población participativa que organiza actividades comunitarias, 
+        festivales escolares y eventos promovidos por la Universidad Autónoma Indígena de México (UAIM). 
+        Los programas sociales del municipio brindan apoyo en salud, educación y cultura, fortaleciendo la identidad comunitaria.
+      </p>
+      <p class="bibliografia">Fuente: Gobierno de Sinaloa (2024). Programa “Transformando Comunidades”.</p>
+    </section>
+
+    <section id="culturales">
+      <h2>Actividades culturales</h2>
+      <div class="image-wrapper">
+        <img src="https://lineadirectaportal.com/wp-content/uploads/2023/04/judi%CC%81os-yoremes.jpeg.webp" alt="Danza de los judíos yoremes en Mochicahui" />
+      </div>
+      <p>
+        La comunidad mantiene viva la tradición yoreme, especialmente en las festividades de Semana Santa, 
+        donde los “judíos” o fariseos protagonizan procesiones únicas llenas de color, música y fe. 
+        Estas celebraciones son reconocidas en todo Sinaloa por su valor cultural e histórico.
+      </p>
+      <p class="bibliografia">Fuente: Luz Noticias (2022). “Fiesta y algarabía en el primer conti de Mochicahui”.</p>
+    </section>
+
+    <section id="como-llegar">
+      <h2>Cómo llegar a Mochicahui</h2>
+      <div class="image-wrapper">
+        <img src="https://i0.wp.com/eslanoticia.mx/wp-content/uploads/2022/10/FB-Obra-El-Fuerte-rehabilitacion-arco-Mochicahui.jpg?ssl=1" alt="Entrada a Mochicahui, El Fuerte" />
+      </div>
+      <p>
+        Mochicahui se ubica en el municipio de El Fuerte, Sinaloa, a unos 20 kilómetros de Los Mochis. 
+        Se puede llegar por la <a href="https://maps.app.goo.gl/frvFF1YYCuDJXpBr5" target="_blank" rel="noopener noreferrer">carretera Los Mochis – El Fuerte, tomando la desviación hacia Mochicahui</a>. 
+        Existen rutas de transporte público y servicios de taxi que conectan con las ciudades cercanas.
+      </p>
+      <p class="bibliografia">Fuente: Wikimapia (2024). Coordenadas y accesos principales.</p>
+    </section>
+
+    <section id="problemas-sociales">
+      <h2>Problemas sociales: causas y consecuencias</h2>
+      <div class="image-wrapper">
+        <img src="https://www.meganoticias.mx/uploads/noticias/cuerpo/radicalizaran-acciones-la-falta-de-agua-hace-crisis-en-mochicahui-16292271661.jpg" alt="Manifestaciones por falta de agua en Mochicahui" />
+      </div>
+      <p>
+        Uno de los principales problemas sociales que enfrenta Mochicahui es la falta de agua potable, 
+        situación que ha provocado manifestaciones de sus habitantes. Este problema se debe principalmente 
+        a deficiencias en la infraestructura hidráulica y a la escasez de lluvias. La consecuencia más evidente 
+        es la afectación a la salud y la calidad de vida de las familias.
+      </p>
+      <p class="bibliografia">Fuente: Luz Noticias (2021). “Pobladores toman la carretera en Mochicahui por falta de agua”.</p>
+    </section>
+
+    <section id="problemas-ecologicos">
+      <h2>Problemas ecológicos</h2>
+      <div class="image-wrapper">
+        <img src="https://www.debate.com.mx/__export/1695759384895/sites/debate/img/2023/09/26/sequia.jpg_346753400.jpg" alt="Sequía en el norte de Sinaloa" />
+      </div>
+      <p>
+        Entre los problemas ecológicos más destacados se encuentra la escasez de agua y la degradación del suelo 
+        por el uso intensivo en la agricultura. También se han reportado afectaciones por residuos agrícolas y la disminución 
+        de especies nativas en los alrededores del río Fuerte.
+      </p>
+      <p class="bibliografia">Fuente: Debate (2023). Reporte de sequía en el norte de Sinaloa.</p>
+    </section>
+
+    <section id="personajes">
+      <h2>Personajes relevantes</h2>
+      <div class="image-wrapper">
+        <img src="https://www.debate.com.mx/__export/1740615708225/sites/debate/img/2025/02/26/tener_un_rector_indxgenax_una_oportunidad_histxrica_para_la_uaim_librado_bacasegua.jpeg_256127966.jpeg" alt="Librado Bacasegua, UAIM" />
+      </div>
+      <p>
+        Entre los personajes relevantes se encuentra el profesor Librado Bacasegua, figura destacada en la educación indígena 
+        y la dirección de la Universidad Autónoma Indígena de México. También se reconoce el legado de líderes tradicionales yoremes 
+        que han mantenido vivas las costumbres ancestrales.
+      </p>
+      <p class="bibliografia">Fuente: Debate (2025). “Una oportunidad histórica para la UAIM: Librado Bacasegua”.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 | Elaborado para fines educativos | Mochicahui, El Fuerte, Sinaloa</p>
+  </footer>
+
+</body>
+</html>
